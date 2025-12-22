@@ -24,7 +24,7 @@ class MyCnn(nn.Module):
             nn.MaxPool2d(2, 2),  # (8-2)/2 + 1 = 4
         )
 
-        self.fc = nn.Linear(128 * 4 * 4, 256)
+        self.fc = nn.Linear(128 * 4 * 4, 10)
 
     def forward(self, x):
         x = self.conv(x)
