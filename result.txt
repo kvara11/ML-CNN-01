@@ -1,21 +1,23 @@
-Epoch 1/20, Loss: 916.3107
-Epoch 2/20, Loss: 667.6560
-Epoch 3/20, Loss: 579.6073
-Epoch 4/20, Loss: 529.0009
-Epoch 5/20, Loss: 471.8886
-Epoch 6/20, Loss: 437.5219
-Epoch 7/20, Loss: 407.6367
-Epoch 8/20, Loss: 381.5804
-Epoch 9/20, Loss: 355.7907
-Epoch 10/20, Loss: 334.1642
-Epoch 11/20, Loss: 314.0885
-Epoch 12/20, Loss: 296.3293
-Epoch 13/20, Loss: 276.6918
-Epoch 14/20, Loss: 261.5384
-Epoch 15/20, Loss: 245.4269
-Epoch 16/20, Loss: 234.3199
-Epoch 17/20, Loss: 221.5632
-Epoch 18/20, Loss: 210.8500
-Epoch 19/20, Loss: 197.6257
-Epoch 20/20, Loss: 189.7171
-Test Accuracy: 80.42%
+cnn_model results:
+
+Epoch 1/20, Loss: 907.7511
+Epoch 2/20, Loss: 663.7227
+Epoch 3/20, Loss: 569.2596
+Epoch 4/20, Loss: 512.2329
+Epoch 5/20, Loss: 469.3975
+Epoch 6/20, Loss: 434.7160
+Epoch 7/20, Loss: 404.0803
+Epoch 8/20, Loss: 374.9611
+Epoch 9/20, Loss: 352.2550
+Epoch 10/20, Loss: 329.3521
+Epoch 11/20, Loss: 309.7990
+Epoch 12/20, Loss: 293.0165
+Epoch 13/20, Loss: 276.0630
+Epoch 14/20, Loss: 257.0860
+Epoch 15/20, Loss: 246.8672
+Epoch 16/20, Loss: 230.2116
+Epoch 17/20, Loss: 216.6228
+Epoch 18/20, Loss: 203.4707
+Epoch 19/20, Loss: 198.8096
+Epoch 20/20, Loss: 184.5371
+Test Accuracy: 79.81%

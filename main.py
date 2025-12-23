@@ -73,6 +73,9 @@ if __name__ == "__main__":
             correct += predicted.eq(labels).sum().item()
         print(f"Test Accuracy: {(100 * correct / total):.2f}%")
 
+    torch.save(model.state_dict(), 'cnn_model.pth')
+    print("Model saved to cnn_model.pth")
+
 
 
 
