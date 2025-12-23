@@ -4,7 +4,7 @@ from PIL import Image
 from model import MyCnn
 import os
 
-def predict_image(image_path, model_path='cnn_model.pth'):
+def predict_image(image_path, model_path='cnn_model_01.pth'):
 
     classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 

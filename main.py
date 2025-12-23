@@ -8,7 +8,8 @@ from model import MyCnn
 
 train_transform = transforms.Compose([
     transforms.RandomHorizontalFlip(),
-    # transforms.RandomCrop(32, padding=4),
+    transforms.RandomCrop(32, padding=4),
+    transforms.ColorJitter(brightness=0.2, contrast=0.2),
     transforms.ToTensor(),
     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
 ])
@@ -73,8 +74,8 @@ if __name__ == "__main__":
             correct += predicted.eq(labels).sum().item()
         print(f"Test Accuracy: {(100 * correct / total):.2f}%")
 
-    torch.save(model.state_dict(), 'cnn_model.pth')
-    print("Model saved to cnn_model.pth")
+    torch.save(model.state_dict(), 'cnn_model_02.pth')
+    print("Model saved")
 
 
 
