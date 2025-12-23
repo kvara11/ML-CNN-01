@@ -11,12 +11,10 @@ class MyCnn(nn.Module):
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=2, stride=2),  # (32-2)/2 + 1 = 16
 
-
             nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, stride=1, padding=1),  # (16-3+2*1)/1 +1= 16
             nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=2, stride=2),  # (16-2)/2 +1=8
-
 
             nn.Conv2d(64, 128, kernel_size=3, padding=1),
             nn.BatchNorm2d(128),
@@ -25,6 +23,15 @@ class MyCnn(nn.Module):
         )
 
         self.fc = nn.Linear(128 * 4 * 4, 10)
+
+
+        # self.fc = nn.Sequential(
+        #     nn.Linear(128 * 4 * 4, 256),
+        #     nn.BatchNorm1d(256),
+        #     nn.ReLU(),
+        #     nn.Dropout(0.3),
+        #     nn.Linear(256, 10)
+        # )
 
     def forward(self, x):
         x = self.conv(x)
