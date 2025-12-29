@@ -49,7 +49,7 @@ def predict_image(image_path, model_path='cnn_model_01.pth'):
 
 
 if __name__ == "__main__":
-    img_path = './test-data/plane.jpg'
+    img_path = './test-data/ho.png'
 
     if os.path.exists(img_path):
         predict_image(img_path)

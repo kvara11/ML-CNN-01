@@ -1,4 +1,4 @@
-cnn_model results:
+cnn_model_01.pth results:
 
 Epoch 1/20, Loss: 907.7511
 Epoch 2/20, Loss: 663.7227
@@ -21,3 +21,6 @@ Epoch 18/20, Loss: 203.4707
 Epoch 19/20, Loss: 198.8096
 Epoch 20/20, Loss: 184.5371
 Test Accuracy: 79.81%
+
+
+cnn_model_02.pth results:

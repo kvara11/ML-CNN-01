@@ -22,16 +22,15 @@ class MyCnn(nn.Module):
             nn.MaxPool2d(2, 2),  # (8-2)/2 + 1 = 4
         )
 
-        self.fc = nn.Linear(128 * 4 * 4, 10)
+        # self.fc = nn.Linear(128 * 4 * 4, 10)
+        self.fc = nn.Sequential(
+            nn.Linear(in_features=128 * 4 * 4, out_features=512),
+            nn.ReLU(),
+            nn.Linear(in_features=512, out_features=256),
+            nn.ReLU(),
+            nn.Linear(in_features=256, out_features=10)
+        )
 
-
-        # self.fc = nn.Sequential(
-        #     nn.Linear(128 * 4 * 4, 256),
-        #     nn.BatchNorm1d(256),
-        #     nn.ReLU(),
-        #     nn.Dropout(0.3),
-        #     nn.Linear(256, 10)
-        # )
 
     def forward(self, x):
         x = self.conv(x)
